@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - ChloeVet</title>
+</head>
+<body>
+
+    <header>
+        <img src="assets/chloeVet.png" alt="Uma imagem com um gato e escrito ChloeVet">
+
+        <div>
+
+            <img src="assets/relogio.png" alt="Uma imagem com um relogio"> 
+            <h3>Atendimento</h3>
+            <p>Atendimento
+                Domingo à Domingo
+                até às 22:00 horas
+            </p>
+
+            <img src="assets/whatsapp.png" alt="Uma imagem com a logo do whatsapp"> 
+            <h3>Envie sua mensagem:</h3>
+            <p>(11)00000-0000
+            </p>
+
+            <img src="assets/telefone.png" alt="Uma imagem com um telefone"> 
+            <h3>Fale conosco:</h3>
+            <p>(11) 00000-0000
+            </p>
+
+        </div>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Dúvidas</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <article>
+
+            <div>
+
+                <h1>Como gostaria de falar conosco?</h1>
+                <p>Estamos sempre à sua disposição!</p>
+                <p>Entre em contato e tire todas as suas dúvidas agora mesmo!</p>
+
+                <h2>Horário de atendimento</h2>
+                <p>De domingo à domingo</p>
+                <p>Até às 22h</p>
+
+                <h2>Fale conosco</h2>
+                <p>Tel.: (11) 00000-0000</p>
+                <p>WhatsApp.: (11) 00000-0000</p>
+                <p>matheusoliveira.3125@gmail.com</p>
+
+            </div>
+
+            <form action="/pagina-processa-dados-do-form" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" />
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" />
+                </div>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="tel" />
+                </div>
+                <div>
+                    <select name="conheceu">  
+                        <option value="valor1" selected>Como nos conheceu?</option>
+                        <option value="valor2">Busca no Google</option>
+                        <option value="valor3">Indicação</option>
+                        <option value="valor4">Já sou cliente</option>
+                        <option value="valor5">Outros</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg"></textarea>
+                </div>
+            </form>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <img src="assets/logo-250px.png" alt="Logo">
+        <p class="copyright">&copy; Copyright Matheus Da Silva - 2022 </p>
+
+    </footer>
+
+</body>
+</html>
