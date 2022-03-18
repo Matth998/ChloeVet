@@ -100,18 +100,21 @@
 
                 </div>
 
-                <form action="/pagina-processa-dados-do-form" method="post" class="formulario">
+                <form class="formulario">
                     <div>
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" />
+                        <input type="text" id="nome" onkeyup="validaNome()"/>
+                        <div id = "txtNome"></div>
                     </div>
                     <div>
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" />
+                        <input type="email" id="email" onkeyup="validaEmail()"/>
+                        <div id = "txtEmail"></div>
                     </div>
                     <div>
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" id="tel" />
+                        <input type="tel" id="tel" onkeyup="validaTel()"/>
+                        <div id = "txtTel"></div>
                     </div>
                     <div class = "ls-custom-select">
                         <select name="conheceu">  
@@ -124,10 +127,11 @@
                     </div>
                     <div>
                         <label for="msg" id="mensagem">Mensagem:</label>
-                        <textarea id="msg"></textarea>
+                        <textarea id="msg" onkeyup="validaMensagem()"></textarea>
+                        <div id = "txtMensagem"></div>
                     </div>
                     <div class="button">
-                        <button type="submit">Enviar sua mensagem</button>
+                        <button type="submit" onclick="enviar()" value="enviar">Enviar sua mensagem</button>
                     </div>
                 </form>
             </div>
@@ -142,6 +146,8 @@
         <p class="copyright">&copy; Copyright Matheus Da Silva - 2022 </p>
 
     </footer>
+
+    <script src="js/index.js"></script>
     
 </body>
 </html>
