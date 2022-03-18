@@ -15,6 +15,7 @@
     --dark-grandient: linear-gradient(153deg, rgba(148,148,148,1) 0%, rgba(69,69,69,1) 48%, rgba(0,0,0,1) 100%);
     --light-blue-grandient: linear-gradient(270deg, #0081c2 0%, #3300ff 100%);
     --green-grandient: linear-gradient(315deg, #75ff8c 0%, #94ffb4 100%);
+    --rajada: font-family: 'Ramaraja', serif;
 
 }
 
