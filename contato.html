@@ -4,100 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contato.css">
     <title>Contatos - ChloeVet</title>
 </head>
 <body>
 
     <header>
-        <img src="assets/chloeVet.png" alt="Uma imagem com um gato e escrito ChloeVet">
+        <div  class="container">
+            <div class="nav-bar">
 
-        <div>
+                <img src="assets/img/chloeVet.png" alt="Uma imagem com um gato e escrito ChloeVet">
 
-            <img src="assets/relogio.png" alt="Uma imagem com um relogio"> 
-            <h3>Atendimento</h3>
-            <p>Atendimento
-                Domingo à Domingo
-                até às 22:00 horas
-            </p>
+                <div class="header-icons">
 
-            <img src="assets/whatsapp.png" alt="Uma imagem com a logo do whatsapp"> 
-            <h3>Envie sua mensagem:</h3>
-            <p>(11)00000-0000
-            </p>
+                    <div>
+                        <p class="icon-header">
+                            <img src="assets/img/relogio.png" alt="Uma imagem com um relogio"> 
+                        </p>
+                    </div>
+                    <div>
+                        <p class="subtitulos">Atendimento</p>
+                    
+                        <p class="paragrafos-header">Domingo à Domingo
+                            <br>
+                            até às 22:00 horas
+                        </p>
+                    </div>
 
-            <img src="assets/telefone.png" alt="Uma imagem com um telefone"> 
-            <h3>Fale conosco:</h3>
-            <p>(11) 00000-0000
-            </p>
+                    <div class="header-icons">
 
+                        <div>
+                            <p class="icon-header">
+                                <img src="assets/img/whatsapp.png" alt="Uma imagem com a logo do whatsapp"> 
+                            </p>
+                        </div>
+                        <div>
+                            <p class="titulos-header">Envie sua mensagem:</p>
+                            <p class="paragrafos-header">(11)00000-0000
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="header-icons">
+
+                        <div>
+                            <p class="icon-header">
+                                <img src="assets/img/telefone.png" alt="Uma imagem com um telefone"> 
+                            </p>
+                        </div>
+                        <div>
+                            <p class="titulos-header">Fale conosco:</p>
+                            <p class="paragrafos-header">(11) 00000-0000</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+            <nav class="menu">
 
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Dúvidas</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+                <ul class="menu-ul">
+                    <li class="menu-li"><a href="index.html">Inicio</a></li>
+                    <li class="menu-li"><a href="#">Sobre</a></li>
+                    <li class="menu-li"><a href="#">Serviços</a></li>
+                    <li class="menu-li"><a href="#">Dúvidas</a></li>
+                    <li class="menu-li"><a href="contato.html">Contato</a></li>
+                </ul>
+
+            </nav>
     </header>
 
     <main>
-        <article>
 
-            <div>
+        <section class="contato">
 
-                <h1>Como gostaria de falar conosco?</h1>
-                <p>Estamos sempre à sua disposição!</p>
-                <p>Entre em contato e tire todas as suas dúvidas agora mesmo!</p>
+            <div class="contato-flex">
 
-                <h2>Horário de atendimento</h2>
-                <p>De domingo à domingo</p>
-                <p>Até às 22h</p>
+                <div>
 
-                <h2>Fale conosco</h2>
-                <p>Tel.: (11) 00000-0000</p>
-                <p>WhatsApp.: (11) 00000-0000</p>
-                <p>matheusoliveira.3125@gmail.com</p>
+                    <h1 class="subtitulos">Como gostaria de falar conosco?</h1>
+                    <p class="paragrafos">Estamos sempre à sua disposição!</p>
+                    <p class="paragrafos">Entre em contato e tire todas as suas dúvidas agora mesmo!</p>
 
+                    <h2 class="subtitulos">Horário de atendimento</h2>
+                    <p class="paragrafos">De domingo à domingo</p>
+                    <p class="paragrafos">Até às 22h</p>
+
+                    <h2 class="subtitulos">Fale conosco</h2>
+                    <p class="paragrafos">Tel.: (11) 00000-0000</p>
+                    <p class="paragrafos">WhatsApp.: (11) 00000-0000</p>
+                    <p class="paragrafos">matheusoliveira.3125@gmail.com</p>
+
+                </div>
+
+                <form action="/pagina-processa-dados-do-form" method="post" class="formulario">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" />
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" />
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="tel" />
+                    </div>
+                    <div class = "ls-custom-select">
+                        <select name="conheceu">  
+                            <option value="valor1" selected>Como nos conheceu?</option>
+                            <option value="valor2">Busca no Google</option>
+                            <option value="valor3">Indicação</option>
+                            <option value="valor4">Já sou cliente</option>
+                            <option value="valor5">Outros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="msg" id="mensagem">Mensagem:</label>
+                        <textarea id="msg"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Enviar sua mensagem</button>
+                    </div>
+                </form>
             </div>
 
-            <form action="/pagina-processa-dados-do-form" method="post">
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" />
-                </div>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" />
-                </div>
-                <div>
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="tel" />
-                </div>
-                <div>
-                    <select name="conheceu">  
-                        <option value="valor1" selected>Como nos conheceu?</option>
-                        <option value="valor2">Busca no Google</option>
-                        <option value="valor3">Indicação</option>
-                        <option value="valor4">Já sou cliente</option>
-                        <option value="valor5">Outros</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="msg">Mensagem:</label>
-                    <textarea id="msg"></textarea>
-                </div>
-            </form>
-        </article>
+        </section>
 
     </main>
 
     <footer>
 
-        <img src="assets/logo-250px.png" alt="Logo">
+        <img src="assets/img/logo-250px.png" alt="Logo">
         <p class="copyright">&copy; Copyright Matheus Da Silva - 2022 </p>
 
     </footer>
-
+    
 </body>
 </html>

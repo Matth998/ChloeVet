@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+
+/* Declaração de variaveis */
+
+:root{
+
+    --white: #FFFFFF;
+    --black: #000000;
+    --green: #008917;
+    --light-green: #31BE52;
+    --blue: #0183EA;
+    --dark-blue: #1c0081;
+    --blue-grandient: linear-gradient(153deg, rgba(0,255,254,1) 0%, rgba(72,133,255,1) 48%, rgba(12,0,108,1) 100%);
+    --light-green-grandient: linear-gradient(142deg, rgba(68,255,160,1) 0%, rgba(0,252,100,1) 47%, rgba(0,142,58,1) 100%);
+    --dark-grandient: linear-gradient(153deg, rgba(148,148,148,1) 0%, rgba(69,69,69,1) 48%, rgba(0,0,0,1) 100%);
+    --light-blue-grandient: linear-gradient(270deg, #0081c2 0%, #3300ff 100%);
+    --green-grandient: linear-gradient(315deg, #75ff8c 0%, #94ffb4 100%);
+
+}
+
+/* Header */
+
+*{
+
+    text-decoration: none;
+    font-family: var(--rajada);
+
+}
+
+div {
+    display: block;
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+.container{
+
+    padding-left: 6%;
+    padding-right: 6%;
+
+}
+
+.nav-bar{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-icons{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3em;
+
+}
+
+.icon-header{
+
+    position: relative;
+    margin-right: 18px;
+    top: -12px;
+
+}
+
+.subtitulos{
+
+    color: #757575;
+    margin: 0;
+    padding-bottom: 1.4em;
+    line-height: 0;
+    margin-bottom: -8px;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.paragrafos-header{
+
+    font-size: 18px;
+    color: var(--green);
+    letter-spacing: 0.65px;
+
+}
+
+.menu{
+
+    background: var(--green-grandient);
+    padding: 2% 9% 2% 9%;
+
+}
+
+.menu-ul{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu-li a{
+
+    color: var(--black);
+    font-weight: 900;
+    font-size: 1.5em;
+
+}
+
+.titulos{
+
+    font-size: 2.3em;
+    color: var(--black);
+    font-weight: 900;
+
+
+}
+
+.h2pet {
+    color: #31BE52;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 47px;
+}
+
+.paragrafos{
+
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+    color: #3D3D3D;
+
+    display: block;
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.button-green{
+
+    background-color: var(--green);
+    
+    letter-spacing: 0.9px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFF;
+    width: 270px;
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    margin-right: 16px;
+    transition: .3s ease-in-out;
+    place-content: center;
+
+    margin-bottom: 1em;
+    margin-left: 25%;
+
+}
+
+.button-green:hover{
+    background-color: var(--light-green);
+    font-size: 20px;
+    border-radius: 5px;
+    width: 270px;
+    height: 67px;
+
+}
+
+.button-blue{
+
+    background-color: var(--blue);
+    border-radius: 3px;
+    letter-spacing: 0.9px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFF;
+    width: 270px;
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    margin-right: 16px;
+    transition: .3s ease-in-out;
+    place-content: center;
+
+    margin-bottom: 1em;
+    margin-left: 25%;
+
+}
+
+.button-blue:hover{
+    background-color: var(--dark-blue);
+    font-size: 16px;
+    border-radius: 5px;
+    width: 270px;
+    height: 67px;
+
+}
+
+.button-green a{
+
+    color: var(--white);
+
+    padding-left: .3em;
+
+}
+
+.button-blue a{
+
+    color: var(--white);
+
+    padding-left: .3em;
+
+}
+
+.buttons{
+
+    margin-top: 6em;
+    display: flex;
+
+}
+
+footer{
+
+    background: var(--light-blue-grandient);
+    text-align: center;
+    padding: 10px 0;
+    
+}
