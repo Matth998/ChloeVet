@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 :root {
 
@@ -18,8 +18,10 @@
 
 * {
 
-    font-family: 'Ramaraja', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1em;
+    text-decoration: none;
+    color: black;
 
 }
 
@@ -40,7 +42,7 @@
 .nav-bar {
 
     display: none;
-    
+
 }
 
 .bg-menu {
@@ -49,7 +51,7 @@
 
 }
 
-.cat-sleep{
+.cat-sleep {
 
     width: 50%;
 
@@ -68,7 +70,7 @@
     font-size: 1.2em;
 }
 
-#img-gato-pendurado{
+#img-gato-pendurado {
 
     display: none;
 
@@ -152,12 +154,49 @@
 
 }
 
-.video{
+.video {
 
     width: 250px;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 4em;
+
+}
+
+.paragrafos{
+
+    font-size: 20px;
+
+}
+
+.padding-left {
+
+    padding-top: 2em;
+
+}
+
+.padding-left {
+
+    padding-left: 1em;
+
+}
+
+.disable-servicos {
+
+    display: none;
+
+}
+
+.img-bordas {
+
+    display: none;
+    border-radius: 1.2em;
+
+}
+
+.paragrafos-servicos1 {
+
+    font-size: 1.2em;
 
 }
 
@@ -174,7 +213,7 @@ footer {
     .btn-margin-top {
 
         margin-top: 1.4em;
-    
+
     }
 
     .nav-bar {
@@ -191,10 +230,10 @@ footer {
     .center {
 
         margin-left: 25%;
-    
+
     }
 
-    .cat-sleep{
+    .cat-sleep {
 
         width: 100%;
 
@@ -204,9 +243,9 @@ footer {
 
         font-size: 2em;
         color: var(--green);
-    
+
         padding-top: 1.2em;
-    
+
     }
 
     .header-icons {
@@ -239,7 +278,7 @@ footer {
 
     }
 
-    #img-gato-pendurado{
+    #img-gato-pendurado {
 
         display: block;
 
@@ -259,20 +298,39 @@ footer {
 
         text-align: center;
         font-size: 1.2em;
-    
+
         padding-left: 7em;
         padding-right: 7em;
-    
+
     }
 
-    .margins{
+    .margins {
 
         margin-left: .2em;
         margin-right: .2em;
 
     }
 
-    .video{
+    .disable-servicos {
+
+        display: block;
+
+    }
+
+    .paragrafos-servicos1 {
+
+        font-size: 1.2em;
+        padding-right: 20em;
+
+    }
+
+    .img-bordas {
+
+        display: block;
+
+    }
+
+    .video {
 
         width: 550px;
         height: 315px;

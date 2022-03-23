@@ -1,0 +1,27 @@
+.paragrafos-servicos{
+
+    font-size: 20px;
+
+}
+
+.img-servicos{
+
+    margin-top: 1em;
+
+}
+
+.margin-servicos{
+
+    margin-bottom: 1em;
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .paragrafos-servicos{
+
+        padding-right:20em;
+    
+    }
+
+}
